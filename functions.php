@@ -1,5 +1,5 @@
 <?php 
-define('hts_theme_version', time());
+define('theme_version', time());
 
 // Adding theme styles and scripts
 add_action('wp_enqueue_scripts', 'af_add_theme_scripts');
@@ -15,7 +15,7 @@ function af_add_theme_scripts() {
         'theme-main-script',
         get_template_directory_uri() . '/assets/js/main.js',
         ['jquery'],
-        hts_theme_version,
+        theme_version,
         true
     );
 
