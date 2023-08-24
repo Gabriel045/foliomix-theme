@@ -12,6 +12,12 @@ module.exports = {
         'background': '#0F0F0F',
    
       },
+
+      screens: {
+        'lg': '1025px',
+        'md': '769px',
+      },
+
       height: {
    
 
