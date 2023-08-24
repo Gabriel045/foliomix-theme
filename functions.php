@@ -25,3 +25,12 @@ function af_add_theme_scripts() {
         get_template_directory_uri() . '/dist/output.css',
     );
 }
+
+function menu()
+{
+    register_nav_menus(array(
+        'primary' => 'Primary Navigation'
+    ));
+}
+
+add_action('after_setup_theme', 'menu');

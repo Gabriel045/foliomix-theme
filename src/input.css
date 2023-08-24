@@ -2,3 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: SF Pro Display;
+    src: url('../assets/fonts/sf-Pro-display/sf-pro-text-regular.woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SF Pro Display;
+    src: url('../assets/fonts/sf-Pro-display/sf-pro-text-medium.woff');
+    font-weight: 500;
+}
+
+.main{
+    max-width: 1440px;
+    width: 100%;
+}
+
+h1{
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h2{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h4{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+span {
+    font-style: normal;
+    font-weight: 400;
+}
+
+body{
+    @apply bg-background;
+    color: #FDFFFC;
+    font-family: SF Pro Display;
+}
+
+section{
+    @apply px-[200px];
+    @apply pt-[80px];   
+}
+
+pre{
+    color: white;
+}
+
+.button{
+    display: inline-flex;
+    padding: 11px 33px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid #009779;
+}
+
+.opacity{
+    color: rgba(253, 255, 252, 0.60);
+}
+
+.center-absolute{
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+iframe{
+   width: 100%;
+   height: 100%;
+}
