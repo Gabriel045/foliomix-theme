@@ -24,6 +24,16 @@ function af_add_theme_scripts() {
         'tailwind',
         get_template_directory_uri() . '/dist/output.css',
     );
+
+    if(is_front_page()){
+        wp_enqueue_script(
+            'menu-functionality',
+            get_template_directory_uri() . '/assets/js/menu.js',
+            ['jquery'],
+            theme_version,
+            true
+        );
+    }
 }
 
 function menu()

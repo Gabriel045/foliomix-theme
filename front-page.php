@@ -15,7 +15,7 @@ $pricing = get_field("pricing");
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <main class="row ">
-        <section id="title-section" class="">
+        <section id="about-us" class="menu">
             <h1 class="font-[500] text-center">
                 <span class=""> <?php echo ($white_title) ?></span>
                 <span class="text-primary "> <?php echo ($green_title) ?></span>
@@ -28,7 +28,7 @@ $pricing = get_field("pricing");
                 </div>
             </div>
         </section>
-        <section id="core-values-sections">
+        <section id="features" class="menu">
             <h2 class="text-center mb-[38px] md:mb-[80px]">Core Values</h2>
             <div class="flex justify-around flex-col md:flex-row items-center gap-y-[14px] md:gap-y-0">
                 <?php foreach ($core_values as $key => $value) : ?>
@@ -98,7 +98,7 @@ $pricing = get_field("pricing");
             </div>
 
         </section>
-        <section id="pricing" class="mt-[50px] md:mt-[150px] overflow-x-hidden">
+        <section id="pricing" class="mt-[50px] md:mt-[150px] overflow-x-hidden menu">
             <h2 class="text-center mb-[80px]">Pricing</h2>
 
             <div class="table-container mt-[80px] border-[#888] border-solid border-[1px] p-[15px] sm:p-[50px] max-w-[220px] sm:max-w-[400px]  md:max-w-[550px]  lg:max-w-[700px]  rounded-[15px] m-auto">
