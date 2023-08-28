@@ -20,11 +20,11 @@ $pricing = get_field("pricing");
                 <span class=""> <?php echo ($white_title) ?></span>
                 <span class="text-primary "> <?php echo ($green_title) ?></span>
             </h1>
-        </section>
-        <section id="video-section" class="">
-            <div id="video" class="relative flex justify-center w-full h-[210px] sm:h-[350px] md:h-[419px] lg:h-[585px]" style="background-image: url('<?php echo $video_thumbnail ?> ')">
-                <div id="play_button" class="absolute center-absolute cursor-pointer">
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/polygon.svg" alt="">
+            <div id="video-section" class="">
+                <div id="video" class="relative flex justify-center w-full h-[210px] sm:h-[350px] md:h-[419px] lg:h-[585px]" style="background-image: url('<?php echo $video_thumbnail ?> ')">
+                    <div id="play_button" class="absolute center-absolute cursor-pointer">
+                        <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/polygon.svg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
@@ -35,69 +35,69 @@ $pricing = get_field("pricing");
                     <p class="opacity text-[14px] lg:text-[18px]"> <?php echo ($value["core_value"]) ?> </p>
                 <?php endforeach ?>
             </div>
-        </section>
 
-        <section id="core-values-phone">
-            <div class="flex flex-wrap md:flex-nowrap mt-[50px] md:mt-0">
-                <div class="w-full md:w-1/2 mb-[40px] md:mb-0 flex justify-center">
-                    <div class="md:w-[45%]">
-                        <h4> <?php echo  $questionnaire_text_blocks[0]["title_questionnaire"] ?> </h4>
-                        <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[0]["text_questionnaire"] ?> </p>
+            <div id="core-values-phone">
+                <div class="flex flex-wrap md:flex-nowrap mt-[50px] md:mt-0">
+                    <div class="w-full md:w-1/2 mb-[40px] md:mb-0 flex justify-center">
+                        <div class="md:w-[45%]">
+                            <h4> <?php echo  $questionnaire_text_blocks[0]["title_questionnaire"] ?> </h4>
+                            <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[0]["text_questionnaire"] ?> </p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-full md:w-1/2  mb-[40px] md:mb-0 flex justify-center">
-                    <div class="md:w-[45%]">
-                        <h4> <?php echo  $questionnaire_text_blocks[1]["title_questionnaire"] ?> </h4>
-                        <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[1]["text_questionnaire"] ?> </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Hidden for desktop and tablet view -->
-            <div class="block md:hidden ">
-                <?php for ($i = 2; $i <= count($questionnaire_text_blocks); $i++) : ?>
-                    <div class=" mb-[40px]">
-                        <h4> <?php echo  $questionnaire_text_blocks[$i]["title_questionnaire"] ?> </h4>
-                        <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[$i]["text_questionnaire"] ?> </p>
-                    </div>
-                <?php endfor ?>
-            </div>
-
-            <!-- Hidden for mobile view -->
-            <div class="md:flex">
-                <div class="hidden md:flex flex-col items-center w-[25%]">
-                    <div class="md:mt-[80px] lg:mt-[153px]">
-                        <h4> <?php echo  $questionnaire_text_blocks[2]["title_questionnaire"] ?> </h4>
-                        <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[2]["text_questionnaire"] ?> </p>
-                    </div>
-                    <div class="mt-[153px]">
-                        <h4> <?php echo  $questionnaire_text_blocks[4]["title_questionnaire"] ?> </h4>
-                        <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[3]["text_questionnaire"] ?> </p>
-                    </div>
-                </div>
-                <div class="w-full md:w-[50%] flex mt-[50px] md:[80px] lg:mt-[153px]">
-                    <div class="w-full h-[660px] bg-top bg-no-repeat relative" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/assets/images/phone.png')">
-                        <div id="video2" class="w-[280px] absolute center-absolute">
-                            <div id="play_button" class=" flex flex-col items-center ">
-                                <p class="mb-[32px] text-[32px] "> Questionnaire </p>
-                                <img class="w-[86px] cursor-pointer" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/polygon.svg" alt="">
-                            </div>
+                    <div class="w-full md:w-1/2  mb-[40px] md:mb-0 flex justify-center">
+                        <div class="md:w-[45%]">
+                            <h4> <?php echo  $questionnaire_text_blocks[1]["title_questionnaire"] ?> </h4>
+                            <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[1]["text_questionnaire"] ?> </p>
                         </div>
                     </div>
                 </div>
-                <div class="w-[25%] hidden md:flex flex-col items-center">
-                    <div class="md:mt-[80px] mt-[153px]">
-                        <h4> <?php echo  $questionnaire_text_blocks[3]["title_questionnaire"] ?> </h4>
-                        <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[4]["text_questionnaire"] ?> </p>
+
+                <!-- Hidden for desktop and tablet view -->
+                <div class="block md:hidden ">
+                    <?php for ($i = 2; $i <= count($questionnaire_text_blocks); $i++) : ?>
+                        <div class=" mb-[40px]">
+                            <h4> <?php echo  $questionnaire_text_blocks[$i]["title_questionnaire"] ?> </h4>
+                            <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[$i]["text_questionnaire"] ?> </p>
+                        </div>
+                    <?php endfor ?>
+                </div>
+
+                <!-- Hidden for mobile view -->
+                <div class="md:flex">
+                    <div class="hidden md:flex flex-col items-center w-[25%]">
+                        <div class="md:mt-[80px] lg:mt-[153px]">
+                            <h4> <?php echo  $questionnaire_text_blocks[2]["title_questionnaire"] ?> </h4>
+                            <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[2]["text_questionnaire"] ?> </p>
+                        </div>
+                        <div class="mt-[153px]">
+                            <h4> <?php echo  $questionnaire_text_blocks[4]["title_questionnaire"] ?> </h4>
+                            <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[3]["text_questionnaire"] ?> </p>
+                        </div>
                     </div>
-                    <div class="mt-[153px]">
-                        <h4> <?php echo  $questionnaire_text_blocks[5]["title_questionnaire"] ?> </h4>
-                        <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[5]["text_questionnaire"] ?> </p>
+                    <div class="w-full md:w-[50%] flex mt-[50px] md:[80px] lg:mt-[153px]">
+                        <div class="w-full h-[660px] bg-top bg-no-repeat relative" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/assets/images/phone.png')">
+                            <div id="video2" class="w-[280px] absolute center-absolute">
+                                <div id="play_button" class=" flex flex-col items-center ">
+                                    <p class="mb-[32px] text-[32px] "> Questionnaire </p>
+                                    <img class="w-[86px] cursor-pointer" src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/polygon.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[25%] hidden md:flex flex-col items-center">
+                        <div class="md:mt-[80px] mt-[153px]">
+                            <h4> <?php echo  $questionnaire_text_blocks[3]["title_questionnaire"] ?> </h4>
+                            <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[4]["text_questionnaire"] ?> </p>
+                        </div>
+                        <div class="mt-[153px]">
+                            <h4> <?php echo  $questionnaire_text_blocks[5]["title_questionnaire"] ?> </h4>
+                            <p class="pt-[11px] opacity"> <?php echo  $questionnaire_text_blocks[5]["text_questionnaire"] ?> </p>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
+
         <section id="pricing" class="mt-[50px] md:mt-[150px] overflow-x-hidden menu">
             <h2 class="text-center mb-[80px]">Pricing</h2>
 
@@ -159,7 +159,7 @@ $pricing = get_field("pricing");
         </section>
         <section class="my-[80px] md:mx-0">
             <div class="text-center">
-                <span class="button"> Download App </span>
+                <a class="button"> Download App </a>
             </div>
         </section>
 

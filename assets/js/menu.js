@@ -2,9 +2,9 @@
 /////////////////
 // simple function to use for callback in the intersection observer
 const changeNav = (entries,observer) => {
-    console.log(entries);
     entries.forEach((entry) => {
         // verify the element is intersecting
+        console.log(entry.isIntersecting);
         if(entry.isIntersecting) {
             // remove old active class
             jQuery('.active').removeClass('active');
@@ -68,7 +68,7 @@ const changeNav = (entries,observer) => {
 
 // init the observer
 const options = {
-    threshold: 0.2
+    threshold: 0.4
 }
 
 const observer = new IntersectionObserver(changeNav,options);

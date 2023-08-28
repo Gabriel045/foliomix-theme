@@ -14,6 +14,12 @@
     font-weight: 500;
 }
 
+@font-face {
+    font-family: SF Pro Display;
+    src: url('../assets/fonts/sf-Pro-display/sf-pro-text-bold.woff');
+    font-weight: 600;
+}
+
 .main{
     max-width: 1440px;
     width: 100%;
@@ -68,6 +74,13 @@ pre{
     gap: 10px;
     border-radius: 50px;
     border: 1px solid #009779;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid #009779;
+    background-color: #009779;
+    /*border: 1px solid #fff;*/
 }
 
 .opacity{
@@ -216,4 +229,9 @@ footer section {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     background-image: linear-gradient(180deg, rgba(213, 208, 208, 1) 0%, rgba(105, 100, 100, 0.7539390756302521) 100%);
+}
+
+#menu-container li a:hover{
+    font-weight: 500;
+    color: white;
 }
